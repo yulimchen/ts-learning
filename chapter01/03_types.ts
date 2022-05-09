@@ -1,3 +1,5 @@
+// 课程：https://www.bilibili.com/video/BV1Xy4y1v7S2?p=4
+
 // 可以直接字面量进行类型声明，就不可赋以外的值
 let a: 10
 a = 10
