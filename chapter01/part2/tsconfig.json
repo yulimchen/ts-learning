@@ -7,10 +7,15 @@
   "exclude": [
     "./src/hello/**/*"
   ],
+  // 编译器选项
   "compilerOptions": {
-    "target": "ES3",
-    "module": "es6"
-  },
-  "outDir": "./dist",
-  "outFile": "./dist/bundle.js"
+    // target 编译为目标版本
+    "target": "ES5",
+    // 指定要使用的模块化规范
+    "module": "ES2015",
+    // 指定编译后输出文件目录
+    "outDir": "./dist",
+    // 所有全局作用域代码合并成一个输出文件（仅支持 system 和 amd 规范
+    // "outFile": "./dist/bundle.js"
+  }
 }
