@@ -26,6 +26,16 @@
     // 不生成编译后文件
     "noEmit": false,
     // 有错时不生成编译后文件
-    "noEmitOnError": true
+    "noEmitOnError": true,
+    // 编译后文件是否严格模式，默认 false
+    "alwaysStrict": true,
+    // 不允许隐式 any
+    "noImplicitAny": true,
+    // 不允许不明类型的 this
+    "noImplicitThis": false,
+    // 严格检查 null 值
+    "strictNullChecks": true,
+    // 所有严格检查的总开关
+    "strict": false
   }
 }
