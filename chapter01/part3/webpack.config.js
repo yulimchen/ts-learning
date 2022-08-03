@@ -1,4 +1,7 @@
 const path = require('path')
+const HTMLWebpackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const { resolve } = require('path')
 
 // webpack 配置
 module.exports = {
@@ -22,5 +25,19 @@ module.exports = {
         exclude: path.resolve(__dirname, "node_modules")
       }
     ]
+  },
+
+  // 插件
+  plugins: [
+    new HTMLWebpackPlugin({
+      template: './src/index.html'
+    }),
+    // 打包前清除旧文件
+    new CleanWebpackPlugin()
+  ],
+
+  // 用来配置允许引用模块
+  resolve: {
+    extensions: ['.ts', '.js', '.tsx', '.jsx']
   }
 }
