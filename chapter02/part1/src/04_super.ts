@@ -28,6 +28,6 @@
     }
   }
 
-  const dog = new Dog('旺财',  3);
+  const dog = new Dog('旺财', 3);
   dog.bark();
 })();
