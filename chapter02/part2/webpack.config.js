@@ -12,9 +12,11 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    // 不要使用箭头函数
     environment: {
-      arrowFunction: false
+      // 不要使用箭头函数
+      arrowFunction: false,
+      // 不要使用 const
+      const: false
     }
   },
 
