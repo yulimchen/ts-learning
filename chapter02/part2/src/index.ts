@@ -1,18 +1,7 @@
 import './style/index.less';
-import Food from './modules/Food';
-import ScorePanel from './modules/ScorePanel';
-import Snake from './modules/Snake';
+import GameControl from './modules/GameControl';
 
-
-// const food = new Food();
-// const scorePanel = new ScorePanel();
-// setInterval(() => {
-//   food.change();
-//   scorePanel.addScore();
-// }, 1000);
-
-
-const scorePanel = new ScorePanel(10, 200);
-for (let i = 0; i < 200; i++) {
-  scorePanel.addScore();
-}
+const gc = new GameControl();
+setInterval(function () {
+  console.log(gc.direction);
+}, 1000)
