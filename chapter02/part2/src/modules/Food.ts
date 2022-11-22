@@ -22,8 +22,8 @@ class Food {
     // 食物的位置最小是0 最大是290
     // 蛇移动一次就是一格，一格大小为 10*10
 
-    const top = Math.floor(Math.random() * 30 * 10);
-    const left = Math.floor(Math.random() * 30 * 10);
+    const top = Math.floor(Math.random() * 30) * 10;
+    const left = Math.floor(Math.random() * 30) * 10;
 
     this.element.style.top = top + 'px';
     this.element.style.left = left + 'px';
