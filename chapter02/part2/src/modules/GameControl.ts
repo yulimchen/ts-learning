@@ -15,7 +15,7 @@ class GameControl {
   constructor() {
     this.snake = new Snake();
     this.food = new Food();
-    this.scorePanel = new ScorePanel();
+    this.scorePanel = new ScorePanel(10, 1);
 
     this.init();
   }
@@ -86,7 +86,7 @@ class GameControl {
 
     // 定时调用
     console.log(this.isLive);
-    this.isLive && setTimeout(this.run.bind(this), 300);
+    this.isLive && setTimeout(this.run.bind(this), 300 - (this.scorePanel.level - 1) * 30);
   }
 
   // 定义方法检查蛇是否吃到了食物
